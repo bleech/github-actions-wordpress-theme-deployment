@@ -1,0 +1,20 @@
+{% extends 'templates/_document.twig' %}
+
+{% block content %}
+  <article class="post">
+    <header class="post-header">
+      {{ renderComponent('BlockPostHeader', { post: post }) }}
+    </header>
+    <section class="post-main">
+      {% for component in post.meta('postComponents') %}
+        {{ renderComponent(component) }}
+      {% endfor %}
+    </section>
+    <footer class="post-meta">
+      {{ renderComponent('BlockPostFooter', { post: post }) }}
+    </footer>
+    <section class="post-related">
+      {{ renderComponent('GridPostsLatest', {'taxonomies': post.categories(), 'options': {'theme': 'themeLight', 'columns': 3}}) }}
+    </section>
+  </article>
+{% endblock %}

@@ -1,0 +1,30 @@
+$breakpoint-mobile-horizontal: 480px;
+$breakpoint-tablet: 768px;
+$breakpoint-tablet-horizontal: 1024px;
+$breakpoint-desktop: 1280px;
+$breakpoint-desktop-wide: 1440px;
+
+$container-max-width: 1440px;
+$container-padding-desktop: 60px;
+$container-padding-tablet: 40px;
+$container-padding-mobile: 15px;
+$content-max-width: 600px;
+$component-spacing-desktop: 120px;
+$component-spacing-tablet: 80px;
+$component-spacing-mobile: 40px;
+$gutter-width: 24px;
+
+$color-brand: #0d8eff;
+$color-accent: #f96417;
+$color-background: #fff;
+$color-contrast: #414751;
+$color-text: $color-contrast;
+$color-headline: #0b1016;
+$color-border: #d8d8d8;
+
+$color-background-light: #f2f6fe;
+$color-background-dark: #091a41;
+$color-background-hero: $color-brand;
+
+$heading-selectors: 'h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6';
+$input-selectors: '[type="tel"], [type="url"], [type="text"], [type="date"], [type="email"], [type="search"], [type="number"], [type="password"], textarea, select';

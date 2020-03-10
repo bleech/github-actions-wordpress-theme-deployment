@@ -1,0 +1,20 @@
+[is='flynt-block-wysiwyg'] {
+  .content {
+    @include reset-content-margins;
+
+    text-align: inherit;
+
+    &--textLeft {
+      text-align: left;
+    }
+
+    &--textCenter {
+      text-align: center;
+    }
+
+    > :last-child {
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+  }
+}
