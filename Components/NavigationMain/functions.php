@@ -2,7 +2,7 @@
 
 namespace Flynt\Components\NavigationMain;
 
-use Timber;
+use Timber\Menu;
 use Flynt\Utils\Asset;
 
 add_action('init', function () {
@@ -12,7 +12,7 @@ add_action('init', function () {
 });
 
 add_filter('Flynt/addComponentData?name=NavigationMain', function ($data) {
-    $data['menu'] = new Timber\Menu('navigation_main');
+    $data['menu'] = new Menu('navigation_main');
     $data['logo'] = [
         'src' => get_theme_mod('custom_header_logo') ? get_theme_mod('custom_header_logo') : Asset::requireUrl('Components/NavigationMain/Assets/logo.svg'),
         'alt' => get_bloginfo('name')
