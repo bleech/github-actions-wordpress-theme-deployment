@@ -2,6 +2,53 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.4.0](https://github.com/flyntwp/flynt/compare/v1.3.0...v1.4.0) (2020-10-21)
+
+
+### Features
+
+* **shortcodes, NavigationFooter:** add global shortcodes and examples for dynamic copyright notices ([#297](https://github.com/flyntwp/flynt/issues/297)) ([00f9f6b](https://github.com/flyntwp/flynt/commit/00f9f6b754a6df41f31b3396ad97884e85f1172d))
+* **theme:** use wp_get_environment_type for WP_ENV ([#298](https://github.com/flyntwp/flynt/issues/298)) ([5bf90db](https://github.com/flyntwp/flynt/commit/5bf90dbd26a51063f60d0a6af68ac800fca41555))
+
+
+### Bug Fixes
+
+* **SliderImages:** add Number polyfill to fix Swiper v6 in IE ([#304](https://github.com/flyntwp/flynt/issues/304)) ([72e2be9](https://github.com/flyntwp/flynt/commit/72e2be9307124c57e5a488beba968afd50d54498))
+* **theme:** force visuallyHidden styles ([#301](https://github.com/flyntwp/flynt/issues/301)) ([d0e7645](https://github.com/flyntwp/flynt/commit/d0e76454a30c678f4af2e1938c468692f9373652))
+* **theme:** rename skiplink text ([#307](https://github.com/flyntwp/flynt/issues/307)) ([f82743d](https://github.com/flyntwp/flynt/commit/f82743dfa7573e7cf54b78bee73349a2eb9e780d))
+* **TimberDynamicResize:** convert path with backslash to slash for uploads basedir just as get_home_path() ([#299](https://github.com/flyntwp/flynt/issues/299)) ([789098e](https://github.com/flyntwp/flynt/commit/789098e51c677b504058fbffb0e7b5a66c8f54b5))
+
+
+### Other
+
+* **php:** adjust several argument definition  ([b7f64f9](https://github.com/flyntwp/flynt/commit/b7f64f9ef71a48beb08f147c89e70ae123c81c53))
+* **swiper:** only import needed components ([#319](https://github.com/flyntwp/flynt/issues/319)) ([ff82ebd](https://github.com/flyntwp/flynt/commit/ff82ebdb70683504f18b85fa47fd2d5583cb4523))
+
+## [1.3.0](https://github.com/flyntwp/flynt/compare/v1.2.1...v1.3.0) (2020-08-13)
+
+
+### Features
+
+* **BlockVideoOembed:** add multiple size options ([a26a933](https://github.com/flyntwp/flynt/commit/a26a933ce6b3b9b1abab732e551fbe1dc8fcb09c))
+* **Components:** Accessibility Improvements ([1ebc27b](https://github.com/flyntwp/flynt/commit/1ebc27b386ac86398d8cc7ce2253388252eeb9bb))
+* **ExternalScriptLoader:** remove ([8c54251](https://github.com/flyntwp/flynt/commit/8c542514e0fcfbad88c389f4863199db2a9a937b)), closes [#283](https://github.com/flyntwp/flynt/issues/283)
+* **FormPasswordProtection, post, GridPostsArchive:** add missing titles in favor of accessibility ([4891096](https://github.com/flyntwp/flynt/commit/489109652e168d9936ac632b2b78f7c136b309ff))
+* **NavigationMain:** allow changing the logo via the customizer ([4e84112](https://github.com/flyntwp/flynt/commit/4e8411260f5b5fdd2d13bbee6e5b0066578d61c5))
+* **pageComponents:** add page components to all pages and post types, but posts ([f218164](https://github.com/flyntwp/flynt/commit/f218164d3c470a6976656b72f121570939c177df))
+* **RemoveEditor:** dequeue Gutenberg styles ([3321873](https://github.com/flyntwp/flynt/commit/3321873109cba56fb66c01a365609a6521bacb37)), closes [#261](https://github.com/flyntwp/flynt/issues/261)
+* **theme:** add heading format classes ([6f357ce](https://github.com/flyntwp/flynt/commit/6f357ceadd1d529916b39baae6d622ba25b4d018))
+* **TimberDynamicResize:** finetune functionality, add global options ([40e2f64](https://github.com/flyntwp/flynt/commit/40e2f645f9c294d989e9269958ba3e0f9dbb60eb))
+* **translations:** make component labels translatable ([4524cab](https://github.com/flyntwp/flynt/commit/4524cabdf0ad83d35fb711d580ce4359b4bc1154))
+
+
+### Bug Fixes
+
+* **baseStyle:** add missing parenthesis to data:image causing issues in IE ([071970d](https://github.com/flyntwp/flynt/commit/071970dd458dbef96628e7f092ab625d5a2fbeb8))
+* **BlockVideoOembed:** substitute deprecated selector ([#244](https://github.com/flyntwp/flynt/issues/244)) ([0338027](https://github.com/flyntwp/flynt/commit/0338027dca6ed54dd96128c8e720ab6299ef30dd))
+* **ComponentLogServer:** check if WP_ENV is defined ([04299f9](https://github.com/flyntwp/flynt/commit/04299f9253dc7ee9b92bf4600e7017c53bd66da6)), closes [#247](https://github.com/flyntwp/flynt/issues/247)
+* **FeatureAdminComponentScreenshots:** fix preview image not being full width ([7a68830](https://github.com/flyntwp/flynt/commit/7a688307364bd23963b27764824d2194a3a9e50f))
+* **MimeTypes:** allow png uploads, remove max upload size, update instructions ([33f0247](https://github.com/flyntwp/flynt/commit/33f0247241d27bc1650da348dbb51530076500f7))
+
 ### [1.2.1](https://github.com/flyntwp/flynt/compare/v1.2.0...v1.2.1) (2020-03-02)
 
 
@@ -71,3 +118,7 @@ All notable changes to this project will be documented in this file. See [standa
 * **theContentFix:** replace shortcode if post id changed ([92b4cfc](https://github.com/flyntwp/flynt/commit/92b4cfc326947c5964182e7b5bf42bde765ef56a))
 * **theme:** disable big image size threshold ([283f072](https://github.com/flyntwp/flynt/commit/283f072e8c0db57f37417adf86fa623329d68cb0))
 * **webpack:** set publicPath dynamically ([265c935](https://github.com/flyntwp/flynt/commit/265c935e6d8a81fdab6513882ce1f5a60ab6348f))
+
+## [1.0.0](https://github.com/flyntwp/flynt/releases/tag/v1.0.0) (2019-11-28)
+
+Initial release
